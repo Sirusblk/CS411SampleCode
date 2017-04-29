@@ -102,24 +102,24 @@ class DemoTableViewController: UITableViewController {
 
     
     private func loadSampleData() {
-        let mario_image = UIImage(named: "Mario")
-        let dk_image = UIImage(named: "DonkeyKong")
-        let fox_image = UIImage(named: "Fox")
+        let city_image = UIImage(named: "City")
+        let leaf_image = UIImage(named: "Leaf")
+        let lion_image = UIImage(named: "Lion")
         
-        let mario_desc = "The italian plumber who saves the Mushroom Kingdom"
-        let dk_desc = "The ape who loves banannas and hates crocodiles"
-        let fox_desc = "The fox who flys his special arwing"
+        let city_desc = "A picture of a city from the street. Photo Credit: Alex Wolfe. Provided by Unsplash.com"
+        let leaf_desc = "A picture of a leaf. Photo Credit: Aaron Burden. Provided by Unsplash.com"
+        let lion_desc = "A picture of a lion. Photo Credit: Lemuel Butler. Provided by Unsplash.com"
         
-        guard let sample1 = SampleCharacter("Mario", mario_desc, mario_image) else {
-            fatalError("Unable to initialize Sample 1: Mario")
+        guard let sample1 = SampleCharacter("City", city_desc, city_image) else {
+            fatalError("Unable to initialize Sample 1: City")
         }
         
-        guard let sample2 = SampleCharacter("Donkey Kong", dk_desc, dk_image) else {
-            fatalError("Unable to initialize Sample 2: Donkey Kong")
+        guard let sample2 = SampleCharacter("Leaf", leaf_desc, leaf_image) else {
+            fatalError("Unable to initialize Sample 2: Leaf")
         }
         
-        guard let sample3 = SampleCharacter("Fox McCloud", fox_desc, fox_image) else {
-            fatalError("Unable to initialize Sample 3: Fox McCloud")
+        guard let sample3 = SampleCharacter("Lion", lion_desc, lion_image) else {
+            fatalError("Unable to initialize Sample 3: Lion")
         }
         
         demoCharacters += [sample1, sample2, sample3]
