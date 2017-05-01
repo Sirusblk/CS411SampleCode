@@ -13,7 +13,7 @@
 		63A7EB7D1EB415250069A80D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A7EB7B1EB415250069A80D /* LaunchScreen.storyboard */; };
 		63A7EB851EB419AF0069A80D /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7EB841EB419AF0069A80D /* DemoTableViewCell.swift */; };
 		63A7EB881EB41FD90069A80D /* DemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7EB871EB41FD90069A80D /* DemoTableViewController.swift */; };
-		63A7EB8B1EB420300069A80D /* SampleCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7EB8A1EB420300069A80D /* SampleCharacter.swift */; };
+		63A7EB8B1EB420300069A80D /* SampleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7EB8A1EB420300069A80D /* SampleItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		63A7EB7E1EB415250069A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63A7EB841EB419AF0069A80D /* DemoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoTableViewCell.swift; path = Views/DemoTableViewCell.swift; sourceTree = "<group>"; };
 		63A7EB871EB41FD90069A80D /* DemoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoTableViewController.swift; path = ViewControllers/DemoTableViewController.swift; sourceTree = "<group>"; };
-		63A7EB8A1EB420300069A80D /* SampleCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SampleCharacter.swift; path = Models/SampleCharacter.swift; sourceTree = "<group>"; };
+		63A7EB8A1EB420300069A80D /* SampleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SampleItem.swift; path = Models/SampleItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 		63A7EB8C1EB420390069A80D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				63A7EB8A1EB420300069A80D /* SampleCharacter.swift */,
+				63A7EB8A1EB420300069A80D /* SampleItem.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 				63A7EB851EB419AF0069A80D /* DemoTableViewCell.swift in Sources */,
 				63A7EB731EB415250069A80D /* AppDelegate.swift in Sources */,
 				63A7EB881EB41FD90069A80D /* DemoTableViewController.swift in Sources */,
-				63A7EB8B1EB420300069A80D /* SampleCharacter.swift in Sources */,
+				63A7EB8B1EB420300069A80D /* SampleItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +333,7 @@
 				63A7EB831EB415250069A80D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

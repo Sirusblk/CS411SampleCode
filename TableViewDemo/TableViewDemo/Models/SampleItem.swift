@@ -1,5 +1,5 @@
 //
-//  SampleCharacter.swift
+//  SampleItem.swift
 //  TableViewDemo
 //
 //  Created by David McLaren on 4/28/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SampleCharacter {
+class SampleItem {
     var name:String = ""
     var desc:String = ""
     var img:UIImage?

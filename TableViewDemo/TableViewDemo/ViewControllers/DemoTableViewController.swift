@@ -13,7 +13,7 @@ class DemoTableViewController: UITableViewController {
     
     // demoCharacters as a var is mutable
     // we can add more characters after initialization
-    var demoCharacters = [SampleCharacter]()
+    var demoItems = [SampleItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class DemoTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return demoCharacters.count
+        return demoItems.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,11 +46,11 @@ class DemoTableViewController: UITableViewController {
         }
         
         // Matches the correct data to the correct table cell
-        let demoCharacter = demoCharacters[indexPath.row]
+        let demoItem = demoItems[indexPath.row]
         
-        cell.nameLabel.text = demoCharacter.name
-        cell.descLabel.text = demoCharacter.desc
-        cell.photoImageView.image = demoCharacter.img
+        cell.nameLabel.text = demoItem.name
+        cell.descLabel.text = demoItem.desc
+        cell.photoImageView.image = demoItem.img
 
         return cell
     }
@@ -110,18 +110,18 @@ class DemoTableViewController: UITableViewController {
         let leaf_desc = "A picture of a leaf. Photo Credit: Aaron Burden. Provided by Unsplash.com"
         let lion_desc = "A picture of a lion. Photo Credit: Lemuel Butler. Provided by Unsplash.com"
         
-        guard let sample1 = SampleCharacter("City", city_desc, city_image) else {
+        guard let sample1 = SampleItem("City", city_desc, city_image) else {
             fatalError("Unable to initialize Sample 1: City")
         }
         
-        guard let sample2 = SampleCharacter("Leaf", leaf_desc, leaf_image) else {
+        guard let sample2 = SampleItem("Leaf", leaf_desc, leaf_image) else {
             fatalError("Unable to initialize Sample 2: Leaf")
         }
         
-        guard let sample3 = SampleCharacter("Lion", lion_desc, lion_image) else {
+        guard let sample3 = SampleItem("Lion", lion_desc, lion_image) else {
             fatalError("Unable to initialize Sample 3: Lion")
         }
         
-        demoCharacters += [sample1, sample2, sample3]
+        demoItems += [sample1, sample2, sample3]
     }
 }
