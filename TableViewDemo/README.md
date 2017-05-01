@@ -17,7 +17,7 @@ We're going to skip making a View Controller for now and instead rely on making 
 
 Increase the prototype cell's height to 90. Drag a `UIImage` and two `Labels` into the prototype cell. Arrange them so they look similar to the image below:
 
-![UIImage and two Labels](https://github.com/Sirusblk/CS411SampleCode/tree/master/TableViewDemo/img/pic01.png)
+![UIImage and two Labels](https://raw.githubusercontent.com/Sirusblk/CS411SampleCode/master/TableViewDemo/img/pic01.png)
 
 You may wish to change the second label's font to `Caption` so it diferentiates itself from first.
 
@@ -76,7 +76,7 @@ You might notice that the table collides with the top of the screen include the 
 
 If you did things right, you should see something similar to below:
 
-![Finalized Table View](https://github.com/Sirusblk/CS411SampleCode/tree/master/TableViewDemo/img/pic02.png)
+![Finalized Table View](https://raw.githubusercontent.com/Sirusblk/CS411SampleCode/master/TableViewDemo/img/pic02.png)
 
 ## Troubleshooting
 Make sure the outlets linked in your View are the appropriate types. They should be `UILabel` and `UIImageView`, not `UIView`!
