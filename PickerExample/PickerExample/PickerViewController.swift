@@ -18,6 +18,7 @@ class PickerViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // Link the picker to our view controller so we can provide the data and call it's delegate functions
         colorPickerView.dataSource = self
         colorPickerView.delegate = self
     }
@@ -32,18 +33,12 @@ class PickerViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        // Set the number of items to the same number of items in our array
         return pickerData.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        // Set each row in the pickerView to the corresponding string in our array
         return pickerData[row]
     }
 }
-
-
-
-
-
-
-
-
